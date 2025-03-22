@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="910"
+   height="200"
+   version="1.1"
+   id="svg7"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <!-- Define the linear gradient -->
+  <defs
+     id="defs7">
+    <linearGradient
+       id="rainbowGradient"
+       x1="-0.5091176"
+       y1="221.35913"
+       x2="259.50003"
+       y2="221.35913"
+       gradientTransform="matrix(3.4907332,0,0,0.78621569,2.9644625,-176.24769)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color:red;stop-opacity:1"
+         id="stop1" />
+      <stop
+         offset="17%"
+         style="stop-color:orange;stop-opacity:1"
+         id="stop2" />
+      <stop
+         offset="34%"
+         style="stop-color:yellow;stop-opacity:1"
+         id="stop3" />
+      <stop
+         offset="51%"
+         style="stop-color:green;stop-opacity:1"
+         id="stop4" />
+      <stop
+         offset="68%"
+         style="stop-color:blue;stop-opacity:1"
+         id="stop5" />
+      <stop
+         offset="85%"
+         style="stop-color:indigo;stop-opacity:1"
+         id="stop6" />
+      <stop
+         offset="100%"
+         style="stop-color:violet;stop-opacity:1"
+         id="stop7" />
+    </linearGradient>
+  </defs>
+  <!-- Draw the sine wave with the gradient fill -->
+  <path
+     d="m 2.9644625,100.00001 q 34.7718505,-193.373432 69.5437005,0 34.771877,193.37338 69.543777,0 34.7717,-193.373432 69.54364,0 34.77182,193.37338 69.54372,0 34.77195,-193.373432 69.54371,0 34.77188,193.37338 69.54376,0 34.7718,-193.373432 69.54362,0 34.77183,193.37338 69.5437,0 34.77182,-193.373432 69.54378,0 34.77184,193.37338 69.54366,0 34.77193,-193.373432 69.54368,0 34.7719,193.37338 69.54379,0 34.77179,-193.373432 69.54367,0"
+     fill="none"
+     stroke="url(#rainbowGradient)"
+     stroke-width="6.62659"
+     id="path7"
+     style="stroke:url(#rainbowGradient)" />
+</svg>

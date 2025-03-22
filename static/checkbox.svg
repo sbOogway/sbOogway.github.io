@@ -1,0 +1,13 @@
+<svg width="512" height="512" viewBox="0 0 512 512" style="color:#adecbe" xmlns="http://www.w3.org/2000/svg"
+  class="h-full w-full">
+  <rect width="512" height="512" x="0" y="0" rx="30" fill="transparent" stroke="transparent" stroke-width="0"
+    stroke-opacity="100%" paint-order="stroke"></rect><svg width="256px" height="256px" viewBox="0 0 32 32"
+    fill="#adecbe" x="128" y="128" role="img" style="display:inline-block;vertical-align:middle"
+    xmlns="http://www.w3.org/2000/svg">
+    <g fill="#adecbe">
+      <path fill="#adecbe"
+        d="M26 4H6a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2ZM6 26V6h20v20Z" />
+      <path fill="#adecbe" d="m14 21.5l-5-4.96L10.59 15L14 18.35L21.41 11L23 12.58l-9 8.92z" />
+    </g>
+  </svg>
+</svg>
