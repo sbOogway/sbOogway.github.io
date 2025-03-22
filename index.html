@@ -1,1 +1,386 @@
-yo dawg wassup
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mattia Papaccioli</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Mattia Papaccioli, italian software developer based in Como. Also a musician and ultimate truth seeker."
+    />
+
+    <link rel="apple-touch-icon" href="/static/logo_fin.png" />
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+    <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/veritablestudios/colored-icons@1.7.8/src/app/ci.min.css"
+    />
+
+    <script
+      defer
+      src="https://umami.mattiapapaccioli.com/script.js"
+      data-website-id="05eee8e1-ed6d-46cd-ac96-341eae4dcf68"
+    ></script>
+  </head>
+
+  <body class="indigo-bg">
+    <div id="wrapper" class="max-width-1200px">
+      <header
+        id="header"
+        class="flex-container flex-center-vert padding-1rem flex-column"
+      >
+        <div class="flex-container" style="width: inherit">
+          <div class="medium-expand">
+            <img src="/static/logo_fin.svg" alt="Website logo" style="height: 52px" />
+          </div>
+          <div
+            class="medium-expand"
+            onclick="toggleNavbar()"
+            style="margin-left: auto; cursor: pointer"
+          >
+            <img src="/static/menu3.svg" alt="Navigation menu" />
+          </div>
+        </div>
+        <nav>
+          <ul class="flex-container flex-space-between flex-column">
+            <li><a href="#home">🛖 home</a></li>
+            <li><a href="#software">🖥️ software</a></li>
+            <li><a href="#music">🎵 music</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <script>
+        function toggleNavbar() {
+          const nav = document.querySelector("nav");
+          nav.classList.toggle("show");
+        }
+      </script>
+      <div class="height-10vh"></div>
+      <button
+        class="pointer basic-style p-big load-transition"
+        id="home-btn"
+        onclick="topScroll()"
+      >
+        🛖
+      </button>
+      <script>
+        // Get the button:
+        const myButton = document.getElementById("home-btn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.addEventListener("scroll", () => {
+          scrollFunction();
+        });
+
+        const scrollFunction = () => {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            // myButton.style.display = "block";
+            myButton.classList.add("show");
+          } else {
+            // myButton.style.display = "none";
+            myButton.classList.remove("show");
+          }
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        const topScroll = () => {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        };
+      </script>
+      <section id="home" class="flex-container height-fit-content">
+        <div class="home-children">
+          <h1 class="outline">Mattia Papaccioli</h1>
+          <h2 class="padding-top-1rem">
+            Let me handle the hard work, I make you grow faster
+          </h2>
+          <div class="padding-top-3rem flex-container flex-space-between">
+            <a
+              data-umami-event="go youtube"
+              target="_blank"
+              href="https://youtube.com/@FlegiasBeats"
+            >
+              <i class="ci expand ci-youtube ci-2x"></i>
+            </a>
+            <a
+              data-umami-event="go upwork"
+              target="_blank"
+              href="https://www.upwork.com/freelancers/~01066c1b10004aff84?viewMode=1"
+            >
+              <img
+                alt="Upwork logo"
+                class="expand width-32px"
+                src="/static/upwork.svg"
+              />
+            </a>
+            <a
+              data-umami-event="go spotify"
+              target="_blank"
+              href="https://l.instagram.com/?u=https%3A%2F%2Fopen.spotify.com%2Fartist%2F1aHPAUM6GdPTfjEsctrS0u%3Fsi%3DOK3kdK_1RdGXbzh2giiHYw&e=AT0hro-Z6_-NAmRyiPm-9BlSAZtDQgU2TFBLJaNSfzybSim5EoqmxvGyiWEtoS407RlzjoC02goCapS6c814rO86ynwzW8fVGh8poseYd0HhkzV1"
+            >
+              <i class="ci expand ci-spotify ci-2x"></i>
+            </a>
+
+            <a
+              data-umami-event="go telegram"
+              target="_blank"
+              href="https://t.me/uomo_succo"
+            >
+              <i class="ci expand ci-telegram ci-2x"></i>
+            </a>
+
+            <a
+              data-umami-event="go twitter"
+              target="_blank"
+              href="https://x.com/__papacc__"
+            >
+              <i class="ci expand ci-twitter ci-2x"></i>
+            </a>
+
+            <a
+              data-umami-event="go github"
+              target="_blank"
+              href="https://github.com/sbOogway"
+            >
+              <i class="ci expand ci-github ci-2x"></i>
+            </a>
+            <a
+              data-umami-event="go instagram"
+              target="_blank"
+              href="https://instagram.com/__papacc__"
+            >
+              <i class="ci expand ci-instagram ci-2x"></i>
+            </a>
+          </div>
+        </div>
+        <div class="home-children flex-container flex-column">
+          <img
+            alt="Mattia Papaccioli portrait"
+            class="portrait small-expand"
+            src="/static/img1.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <!--       
+        <section id="websites" class="flex-container height-fit-content">
+            <div class="home-children">
+              <h2 class="medium-big-text medium-heavy-text outline">
+                Websites
+              </h2>
+              <h3>A 500€ fee is required for the creation of the website</h3>
+              <div class="flex-container flex-space-between">
+                <div class="price-card flex-container flex-column">
+                  <h3 >Basic</h3>
+                  <h2 style="font-weight: 800;">50€<span style="font-size: 1.6rem; font-weight: 300;">/month</span></h2>
+                  <ul class="price-card-list">
+                    <li>☑️ website</li>
+                    <li>☑️ ssl certificate</li>
+                    <li>☑️ custom domain</li>
+                  </ul>
+      
+                  <a class="cta-link" href="">
+                    <div class="cta">I want this now</div>
+                  </a>
+                </div>
+                <div class="price-card flex-container flex-column">
+                  <h3>Pro</h3>
+                  <h2 style="font-weight: 800;">100€<span style="font-size: 1.6rem; font-weight: 300;">/month</span></h2>
+                  <ul class="price-card-list">
+                    <li>☑️ all features in Basic package</li>
+                    <li>☑️ seo optimization</li>
+                    <li>☑️ google maps optimization</li>
+                  </ul>
+                  <a class="cta-link" href="">
+                    <div class="cta">I want this now</div>
+                  </a>
+      
+                </div>
+                <div class="price-card flex-container flex-column">
+                  <h3>Custom</h3>
+                  <h2 style="font-weight: 800;">200€<span style="font-size: 1.6rem; font-weight: 300;">/month</span></h2>
+                  <ul class="price-card-list">
+                    <li>☑️ all features in Pro package</li>
+                    <li>☑️ customized website</li>
+                    <li>☑️ customized growth plan</li>
+                    <li>☑️ continuos site update</li>
+                  </ul>
+                  <a class="cta-link" href="">
+                    <div class="cta">Book me a call</div>
+                  </a>
+      
+                </div>
+              </div>
+            </div>
+        </section>  -->
+
+
+      <section id="software" class="flex-container height-fit-content">
+        <!-- instead of a flex make a grid to handle better zooming-->
+        <div class="home-children">
+          <h2
+            class="padding-top-2rem medium-big-text medium-heavy-text outline"
+          >
+            Software
+          </h2>
+        </div>
+        <div class="home-children">
+          <p class="p-big padding-top-1rem">
+            I am a full stack software engineer with 4 year of experience. 👨‍💻
+          </p>
+          <br />
+          <p class="p-small">
+            I am specialized in python develoment and devops, mainly. I have
+            worked with telegram, youtube, twitter and discord api for the
+            creation of various automation services. 🤖
+          </p>
+          <div class="padding-top-1rem flex-container flex-space-between">
+            <i class="ci expand ci-ruby ci-2x"></i>
+            <i class="ci expand ci-html ci-2x"></i>
+            <i class="ci expand ci-js ci-2x"></i>
+            <i class="ci expand ci-mongodb ci-2x"></i>
+            <i class="ci expand ci-python ci-2x"></i>
+            <i class="ci expand ci-css ci-2x"></i>
+            <i class="ci expand ci-docker ci-2x"></i>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="music"
+        class="flex-container flex-column height-fit-content padding-1rem"
+      >
+        <h2 class="medium-big-text medium-heavy-text outline">Music</h2>
+        <div class="flex-container flex-wrap flex-space-between">
+          <div class="flex-container flex-column padding-bottom-3rem">
+            <h3 class="padding-left-0">🛸 trip to earth</h3>
+            <img
+              alt="trip to earth album cover"
+              class="album-cover small-expand"
+              src="/static/cover_trip_to_earth.webp"
+            />
+            <a
+              class="padding-top-1rem"
+              target="_blank"
+              href="https://www.youtube.com/watch?v=hziZ-ebdU6g&list=PLgNzGHlHtdBUnC2Ji0kxOrJOUBtSEhQih"
+              data-umami-event="go trip to earth"
+            >
+              <i class="ci expand ci-youtube ci-2x"></i>
+            </a>
+          </div>
+
+          <div class="flex-container flex-column padding-bottom-3rem">
+            <h3 class="padding-left-0">👾 Synth Wave</h3>
+            <img
+              alt="Synth Wave album cover"
+              class="album-cover small-expand"
+              src="/static/cover_synth_wave.webp"
+            />
+            <a
+              class="padding-top-1rem"
+              target="_blank"
+              href="https://www.youtube.com/watch?v=uwFyW5GDHrw&list=PLgNzGHlHtdBWIXiKIRjbPqBM-Iuzs7niO&pp=gAQBiAQB"
+              data-umami-event="go synth wave"
+            >
+              <i class="ci expand ci-youtube ci-2x"></i>
+            </a>
+          </div>
+
+          <div class="flex-container flex-column padding-bottom-3rem">
+            <h3 class="padding-left-0">🍂 the nature trilogy</h3>
+            <img
+              alt="the nature trilogy album cover"
+              class="album-cover small-expand"
+              src="/static/cover_nature_trilogy.webp"
+            />
+            <a
+              class="padding-top-1rem"
+              target="_blank"
+              href="https://www.youtube.com/watch?v=1SJG35HIzak&list=PLgNzGHlHtdBVJAb93sc1jSrT0PII6p5vB&pp=gAQBiAQB"
+              data-umami-event="go the nature trilogy"
+            >
+              <i class="ci expand ci-youtube ci-2x"></i>
+            </a>
+          </div>
+
+          <div class="flex-container flex-column padding-bottom-3rem">
+            <h3 class="padding-left-0">👨‍🚀 outta space</h3>
+            <img
+              alt="outta space album cover"
+              class="album-cover small-expand"
+              src="/static/cover_outta_space.webp"
+            />
+            <a
+              class="padding-top-1rem"
+              target="_blank"
+              href="https://www.youtube.com/watch?v=L1PlHAB6EJI&list=PLgNzGHlHtdBXJfVim5Tcrglm5NPuDicjs&index=1"
+              data-umami-event="go outta space"
+            >
+              <i class="ci expand ci-youtube ci-2x"></i>
+            </a>
+          </div>
+
+          <div class="flex-container flex-column padding-bottom-3rem">
+            <h3 class="padding-left-0">🚀 u know</h3>
+            <img
+              alt="u know album cover"
+              class="album-cover small-expand"
+              src="/static/cover_u_know.webp"
+            />
+            <a
+              class="padding-top-1rem"
+              target="_blank"
+              href="https://youtube.com/@FlegiasBeats"
+              data-umami-event="go u know"
+            >
+              <i class="ci expand ci-youtube ci-2x"></i>
+            </a>
+          </div>
+
+          <div class="flex-container flex-column padding-bottom-3rem">
+            <h3 class="padding-left-0">🌬️ WINDY OUTSIDE!</h3>
+            <img
+              alt="WINDY OUTSIDE! album cover"
+              class="album-cover small-expand"
+              src="/static/cover_windy_outside.webp"
+            />
+            <a
+              class="padding-top-1rem"
+              target="_blank"
+              href="https://youtube.com/@FlegiasBeats"
+              data-umami-event="go windy outside"
+            >
+              <i class="ci expand ci-youtube ci-2x"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="footer"
+        class="flex-container height-fit-content no-margin-top no-margin-bottom flex-justify-center"
+      >
+        <span class="padding-1rem p-smaller outline"
+          >Mattia Papaccioli 2024</span
+        >
+      </section>
+    </div>
+  </body>
+</html>
