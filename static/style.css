@@ -32,7 +32,7 @@
   }
   
   body {
-    font-family: var(--font-inter);
+    font-family: var(--font);
     color: var(--txt-color);
   
     height: 100vh;
