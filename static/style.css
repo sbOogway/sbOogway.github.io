@@ -179,12 +179,12 @@
   
   .p-small {
     font-size: clamp(1rem, 4vw, 2rem);
-    font-weight: 100;
+    font-weight: 200;
   }
   
   .p-smaller {
     font-size: clamp(0.8rem, 3vw, 1.8rem);
-    font-weight: 100;
+    font-weight: 200;
   }
   
   .p-big {
