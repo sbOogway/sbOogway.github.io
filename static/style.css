@@ -25,6 +25,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* This makes sure that the padding and border are included in the total width and height of the elements. */
+    font-weight: 400;
   }
   
   html {
