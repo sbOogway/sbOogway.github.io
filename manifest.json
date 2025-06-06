@@ -1,0 +1,16 @@
+{
+  "name": "mattia_papaccioli",
+  "short_name": "papacc",
+  "start_url": "index.html",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "static/logo_fin.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#adecbe",
+  "background_color": "#000",
+  "display": "standalone"
+}
