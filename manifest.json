@@ -8,6 +8,11 @@
       "src": "static/logo_fin.svg",
       "sizes": "any",
       "type": "image/svg+xml"
+    },
+    {
+      "src": "static/logo.png",
+      "sizes": "800x800",
+      "type": "image/png"
     }
   ],
   "theme_color": "#000",
