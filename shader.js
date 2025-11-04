@@ -34,7 +34,7 @@ in vec2 vUV;
 uniform vec2 iResolution;
 uniform float iTime;
 
-#define FREQUENCY 999.
+#define FREQUENCY 9999.
 #define THICKNESS 0.01
 #define Y_SHIFT 0.5
 #define AMPLITUDE 0.45

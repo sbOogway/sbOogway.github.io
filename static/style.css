@@ -582,6 +582,16 @@
       /* padding-top: 1rem; */
     }
 
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+
+
     /* #main-content {
       flex: 4;
     } */
