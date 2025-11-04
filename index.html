@@ -1,233 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Mattia Papaccioli</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Mattia Papaccioli, italian software developer based in Como. Also a musician and ultimate truth seeker."
+    />
 
-<head>
-  <title>Mattia Papaccioli</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description"
-    content="Mattia Papaccioli, italian software developer based in Como. Also a musician and ultimate truth seeker." />
+    <link rel="apple-touch-icon" href="/static/logo_fin.png" />
 
-  <link rel="apple-touch-icon" href="/static/logo_fin.png" />
+    <link rel="stylesheet" href="/static/style.css" />
 
-  <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="manifest.json" />
 
-  <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
-  <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/veritablestudios/colored-icons@1.7.8/src/app/ci.min.css"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/veritablestudios/colored-icons@1.7.8/src/app/ci.min.css" />
+    <script
+      defer
+      src="https://umami.mattiapapaccioli.com/script.js"
+      data-website-id="05eee8e1-ed6d-46cd-ac96-341eae4dcf68"
+    ></script>
+  </head>
 
-  <script defer src="https://umami.mattiapapaccioli.com/script.js"
-    data-website-id="05eee8e1-ed6d-46cd-ac96-341eae4dcf68"></script>
-</head>
-
-<body class="indigo-bg">
-  <div id="wrapper" class="max-width-1200px">
-    <header id="header" class="flex-container flex-center-vert padding-1rem flex-column">
-      <div class="flex-container" style="width: inherit">
-        <div class="medium-expand">
-          <img src="/static/logo_fin.svg" alt="Website logo" style="height: 52px" />
+  <body class="indigo-bg">
+    <div id="wrapper" class="max-width-1200px">
+      <header
+        id="header"
+        class="flex-container flex-center-vert padding-1rem flex-column"
+      >
+        <div class="flex-container" style="width: inherit">
+          <div class="medium-expand">
+            <img
+              src="/static/logo_fin.svg"
+              alt="Website logo"
+              style="height: 52px"
+            />
+          </div>
+          <div
+            class="medium-expand"
+            onclick="toggleNavbar()"
+            style="margin-left: auto; cursor: pointer"
+          >
+            <img src="/static/menu3.svg" alt="Navigation menu" />
+          </div>
         </div>
-        <div class="medium-expand" onclick="toggleNavbar()" style="margin-left: auto; cursor: pointer">
-          <img src="/static/menu3.svg" alt="Navigation menu" />
-        </div>
-      </div>
-      <nav>
-        <ul class="flex-container flex-space-between flex-column">
-          <!-- <li><a href="#home">🛖 home</a></li> -->
-          <!-- <li><a href="#software">🖥️ software</a></li> -->
-          <!-- <li><a href="#music">🎵 music</a></li> -->
-          <li><a href="t00lz">🛠️ t00lz</a></li>
-          <li><a href="t3mpl4tes">🗺️ t3mpl4tes</a></li>
-          <li><a href="notes">📝 notes</a></li>
+        <nav>
+          <ul class="flex-container flex-space-between flex-column">
+            <!-- <li><a href="#home">🛖 home</a></li> -->
+            <!-- <li><a href="#software">🖥️ software</a></li> -->
+            <!-- <li><a href="#music">🎵 music</a></li> -->
+            <li><a href="t00lz">🛠️ t00lz</a></li>
+            <li><a href="t3mpl4tes">🗺️ t3mpl4tes</a></li>
+            <li><a href="notes">📝 notes</a></li>
+          </ul>
+        </nav>
+      </header>
 
-        </ul>
-      </nav>
-    </header>
-
-    <script>
-      function toggleNavbar() {
-        const nav = document.querySelector("nav");
-        nav.classList.toggle("show");
-      }
-    </script>
-    <!-- <div class="height-10vh"></div> -->
-    <button class="pointer basic-style p-big load-transition" id="home-btn" onclick="topScroll()">
-      🛖
-    </button>
-    <script>
-      // Get the button:
-      const myButton = document.getElementById("home-btn");
-
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.addEventListener("scroll", () => {
-        scrollFunction();
-      });
-
-      const scrollFunction = () => {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          // myButton.style.display = "block";
-          myButton.classList.add("show");
-        } else {
-          // myButton.style.display = "none";
-          myButton.classList.remove("show");
+      <script>
+        function toggleNavbar() {
+          const nav = document.querySelector("nav");
+          nav.classList.toggle("show");
         }
-      };
+      </script>
+      <!-- <div class="height-10vh"></div> -->
+      <button
+        class="pointer basic-style p-big load-transition"
+        id="home-btn"
+        onclick="topScroll()"
+      >
+        🛖
+      </button>
+      <script>
+        // Get the button:
+        const myButton = document.getElementById("home-btn");
 
-      // When the user clicks on the button, scroll to the top of the document
-      const topScroll = () => {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-      };
-    </script>
-    <section id="home" class="flex-container height-fit-content">
-      <div class="home-children">
-        <h1 class="outline">Mattia Papaccioli</h1>
-        <h2 class="padding-top-1rem">
-          Let me handle the hard work,<br> I make you grow faster
-        </h2>
-        <div class="padding-top-3rem flex-container flex-space-between">
-          <a data-umami-event="go youtube" target="_blank" href="https://youtube.com/@FlegiasBeats">
-            <i class="ci expand ci-youtube ci-2x"></i>
-          </a>
-          <a data-umami-event="go upwork" target="_blank"
-            href="https://www.upwork.com/freelancers/~01066c1b10004aff84?viewMode=1">
-            <img alt="Upwork logo" class="expand width-32px" src="/static/upwork.svg" />
-          </a>
-          <a data-umami-event="go spotify" target="_blank"
-            href="https://l.instagram.com/?u=https%3A%2F%2Fopen.spotify.com%2Fartist%2F1aHPAUM6GdPTfjEsctrS0u%3Fsi%3DOK3kdK_1RdGXbzh2giiHYw&e=AT0hro-Z6_-NAmRyiPm-9BlSAZtDQgU2TFBLJaNSfzybSim5EoqmxvGyiWEtoS407RlzjoC02goCapS6c814rO86ynwzW8fVGh8poseYd0HhkzV1">
-            <i class="ci expand ci-spotify ci-2x"></i>
-          </a>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.addEventListener("scroll", () => {
+          scrollFunction();
+        });
 
-          <a data-umami-event="go telegram" target="_blank" href="https://t.me/uomo_succo">
-            <i class="ci expand ci-telegram ci-2x"></i>
-          </a>
+        const scrollFunction = () => {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            // myButton.style.display = "block";
+            myButton.classList.add("show");
+          } else {
+            // myButton.style.display = "none";
+            myButton.classList.remove("show");
+          }
+        };
 
-          <a data-umami-event="go twitter" target="_blank" href="https://x.com/__papacc__">
-            <i class="ci expand ci-twitter ci-2x"></i>
-          </a>
+        // When the user clicks on the button, scroll to the top of the document
+        const topScroll = () => {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        };
+      </script>
 
-          <a data-umami-event="go github" target="_blank" href="https://github.com/sbOogway">
-            <i class="ci expand ci-github ci-2x"></i>
-          </a>
-          <a data-umami-event="go instagram" target="_blank" href="https://instagram.com/__papacc__">
-            <i class="ci expand ci-instagram ci-2x"></i>
-          </a>
+      <div style="display: flex; gap:3rem">
+        <div id="main-content">
+          <section id="home" class="flex-container height-fit-content">
+            <div class="home-children">
+              <h1 class="outline">Mattia Papaccioli</h1>
+              <h2 class="padding-top-1rem">
+                Let me handle the hard work,<br />
+                I make you grow faster
+              </h2>
+              <div class="padding-top-3rem flex-container flex-space-between">
+                <a
+                  data-umami-event="go youtube"
+                  target="_blank"
+                  href="https://youtube.com/@FlegiasBeats"
+                >
+                  <i class="ci expand ci-youtube ci-2x"></i>
+                </a>
+                <a
+                  data-umami-event="go upwork"
+                  target="_blank"
+                  href="https://www.upwork.com/freelancers/~01066c1b10004aff84?viewMode=1"
+                >
+                  <img
+                    alt="Upwork logo"
+                    class="expand width-32px"
+                    src="/static/upwork.svg"
+                  />
+                </a>
+                <a
+                  data-umami-event="go spotify"
+                  target="_blank"
+                  href="https://l.instagram.com/?u=https%3A%2F%2Fopen.spotify.com%2Fartist%2F1aHPAUM6GdPTfjEsctrS0u%3Fsi%3DOK3kdK_1RdGXbzh2giiHYw&e=AT0hro-Z6_-NAmRyiPm-9BlSAZtDQgU2TFBLJaNSfzybSim5EoqmxvGyiWEtoS407RlzjoC02goCapS6c814rO86ynwzW8fVGh8poseYd0HhkzV1"
+                >
+                  <i class="ci expand ci-spotify ci-2x"></i>
+                </a>
+
+                <a
+                  data-umami-event="go telegram"
+                  target="_blank"
+                  href="https://t.me/uomo_succo"
+                >
+                  <i class="ci expand ci-telegram ci-2x"></i>
+                </a>
+
+                <a
+                  data-umami-event="go twitter"
+                  target="_blank"
+                  href="https://x.com/__papacc__"
+                >
+                  <i class="ci expand ci-twitter ci-2x"></i>
+                </a>
+
+                <a
+                  data-umami-event="go github"
+                  target="_blank"
+                  href="https://github.com/sbOogway"
+                >
+                  <i class="ci expand ci-github ci-2x"></i>
+                </a>
+                <a
+                  data-umami-event="go instagram"
+                  target="_blank"
+                  href="https://instagram.com/__papacc__"
+                >
+                  <i class="ci expand ci-instagram ci-2x"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section
+            id="hero"
+            class="flex-container"
+            style="justify-content: center"
+          >
+            <div style="position: relative; display: inline-block">
+              <svg style="position: absolute" height="100%" width="100%">
+                <!-- <circle cx="75" cy="75" r="50" fill="#adecbe"/> -->
+                <line
+                  x1="36%"
+                  y1="10%"
+                  x2="36%"
+                  y2="20%"
+                  stroke-width="3"
+                  stroke="indigo"
+                />
+                <line
+                  x1="38%"
+                  y1="18%"
+                  x2="36%"
+                  y2="20%"
+                  stroke-width="3"
+                  stroke="indigo"
+                />
+                <line
+                  x1="34%"
+                  y1="18%"
+                  x2="36%"
+                  y2="20%"
+                  stroke-width="3"
+                  stroke="indigo"
+                />
+              </svg>
+              <img
+                style="max-width: 965px"
+                alt="Mattia Papaccioli portrait"
+                class="portrait"
+                src="/static/rijnani.jpg"
+                alt=""
+              />
+            </div>
+          </section>
+
+          <section id="education" class="flex-container height-fit-content">
+            <div class="home-children">
+              <h2
+                class="medium-big-text medium-heavy-text outline"
+                style="padding-right: 1rem"
+              >
+                Alma Mater
+              </h2>
+            </div>
+            <div class="home-children">
+              <p class="p-big">Bachelor's degree in Computer Science</p>
+
+              <p class="p-small">
+                <br />
+                - status: in progress 90%
+                <br />
+                <br />
+                - at: Università degli studi dell'Insubria, Varese, Italy
+                <br />
+                <br />
+              </p>
+
+              <img
+                src="/static/unilogo.png"
+                width="200"
+                alt="uninsubria logo"
+                class="padding-top-1rem"
+              />
+            </div>
+          </section>
+
+          <section id="software" class="flex-container height-fit-content">
+            <!-- instead of a flex make a grid to handle better zooming-->
+            <div class="home-children">
+              <h2 class="medium-big-text medium-heavy-text outline">
+                Software
+              </h2>
+            </div>
+            <div class="home-children">
+              <p class="p-big">
+                👨‍💻 I am a full stack software engineer with 5 year of
+                experience.
+              </p>
+              <br />
+              <p class="p-small">
+                🤖 I am specialized in python develoment and devops, mainly. I
+                have worked with telegram, youtube, twitter and discord api for
+                the creation of various automation services.
+              </p>
+              <div class="padding-top-1rem flex-container flex-space-between">
+                <i class="ci expand ci-ruby ci-2x"></i>
+                <i class="ci expand ci-html ci-2x"></i>
+                <i class="ci expand ci-js ci-2x"></i>
+                <i class="ci expand ci-mongodb ci-2x"></i>
+                <i class="ci expand ci-python ci-2x"></i>
+                <i class="ci expand ci-css ci-2x"></i>
+                <i class="ci expand ci-docker ci-2x"></i>
+              </div>
+            </div>
+          </section>
+
+          <section id="hacking" class="flex-container height-fit-content">
+            <div class="home-children">
+              <h2 class="medium-big-text medium-heavy-text outline">H4ck1ng</h2>
+            </div>
+
+            <div class="home-children">
+              <p class="p-big">
+                Took part in University of Insubria
+                <a href="https://cyberchallenge.it/">Cyberchallenge</a> course.
+              </p>
+
+              <p class="p-small">
+                Learned ethical hacking skills such as reverse engineering and
+                cryptography.
+              </p>
+              <img
+                style="max-width: 80vw"
+                src="/static/CCIT_Logo.svg"
+                alt="Cyberchallenge logo"
+                class="padding-top-1rem"
+              />
+            </div>
+          </section>
+        </div>
+
+        <div id="shader" style="position: relative">
+          <canvas
+            id="glcanvas"
+            style="width: 100px; height: 100%; display: block"
+          ></canvas>
+          <script src="shader.js"></script>
         </div>
       </div>
-    </section>
 
-    <section id="hero" class="flex-container " style="justify-content: center; ">
-      <div style="position: relative; display: inline-block;">
-        <svg style="position: absolute;" height="100%" width="100%">
-          <!-- <circle cx="75" cy="75" r="50" fill="#adecbe"/> -->
-          <line x1="36%" y1="10%" x2="36%" y2="20%" stroke-width="3" stroke="indigo" />
-          <line x1="38%" y1="18%" x2="36%" y2="20%" stroke-width="3" stroke="indigo" />
-          <line x1="34%" y1="18%" x2="36%" y2="20%" stroke-width="3" stroke="indigo" />
-
-        </svg>
-        <img style="max-width: 965px;" alt="Mattia Papaccioli portrait" class="portrait" src="/static/rijnani.jpg"
-          alt="" />
-      </div>
-    </section>
-
-    <section id="education" class="flex-container height-fit-content">
-      <div class="home-children">
-        <h2 class="medium-big-text medium-heavy-text outline" style="padding-right: 1rem;">
-          Alma Mater
-        </h2>
-      </div>
-      <div class="home-children">
-        <p class="p-big">
-          Bachelor's degree in Computer Science
-        </p>
-
-        <p class="p-small">
-          <br>
-          - status: in progress 90%
-          <br>
-          <br>
-          - at: Università degli studi dell'Insubria, Varese, Italy
-          <br>
-          <br>
-
-
-        </p>
-
-        <img src="/static/unilogo.png" width="200" alt="uninsubria logo" class="padding-top-1rem">
-
-      </div>
-
-    </section>
-
-    <section id="software" class="flex-container height-fit-content">
-      <!-- instead of a flex make a grid to handle better zooming-->
-      <div class="home-children">
-        <h2 class="medium-big-text medium-heavy-text outline">
-          Software
-        </h2>
-      </div>
-      <div class="home-children">
-        <p class="p-big">
-          👨‍💻 I am a full stack software engineer with 5 year of experience. 
-        </p>
-        <br />
-        <p class="p-small">
-          🤖 I am specialized in python develoment and devops, mainly. I have
-          worked with telegram, youtube, twitter and discord api for the
-          creation of various automation services.
-        </p>
-        <div class="padding-top-1rem flex-container flex-space-between">
-          <i class="ci expand ci-ruby ci-2x"></i>
-          <i class="ci expand ci-html ci-2x"></i>
-          <i class="ci expand ci-js ci-2x"></i>
-          <i class="ci expand ci-mongodb ci-2x"></i>
-          <i class="ci expand ci-python ci-2x"></i>
-          <i class="ci expand ci-css ci-2x"></i>
-          <i class="ci expand ci-docker ci-2x"></i>
-        </div>
-      </div>
-    </section>
-
-    <section id="hacking" class="flex-container height-fit-content">
-      <div class="home-children">
-
-        <h2 class=" medium-big-text medium-heavy-text outline">
-          H4ck1ng
-        </h2>
-
-
-      </div>
-
-      <div class="home-children">
-
-        <p class="p-big">
-          Took part in University of Insubria <a href="https://cyberchallenge.it/">Cyberchallenge</a> course.
-
-
-        </p>
-
-        <p class="p-small">
-
-          Learned ethical hacking skills such as reverse engineering and cryptography.
-        </p>
-        <img style="max-width: 80vw;" src="/static/CCIT_Logo.svg" alt="Cyberchallenge logo" class="padding-top-1rem">
-
-      </div>
-
-    </section>
-
-    <section id="footer" class="flex-container height-fit-content no-margin-top no-margin-bottom flex-justify-center">
-      <span class="padding-1rem p-smaller outline">Mattia Papaccioli 2025</span>
-    </section>
-  </div>
-</body>
-
+      <section
+        id="footer"
+        class="flex-container height-fit-content no-margin-top no-margin-bottom flex-justify-center"
+      >
+        <span class="padding-1rem p-smaller outline"
+          >Mattia Papaccioli 2025</span
+        >
+      </section>
+    </div>
+  </body>
 </html>
