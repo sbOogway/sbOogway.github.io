@@ -110,9 +110,11 @@
         };
       </script>
 
-      <div style="display: flex; gap: 2rem">
-        <div id="main-content" style="flex:8;">
-          <section id="home" class="flex-container height-fit-content">
+      <div style="display: flex; height:min-content;">
+        <div id="main-content"
+        style="margin-right: 1rem;">
+          <section id="home" class="flex-container height-fit-content"
+          style="margin-top: 3rem;">
             <div class="home-children">
               <h1 class="outline">Mattia Papaccioli</h1>
               <h2 class="padding-top-1rem">
@@ -285,7 +287,8 @@
             </div>
           </section>
 
-          <section id="hacking" class="flex-container height-fit-content">
+          <section id="hacking" class="flex-container height-fit-content"
+          style="margin-bottom: 3rem ;">
             <div class="home-children">
               <h2 class="medium-big-text medium-heavy-text outline">H4ck1ng</h2>
             </div>
@@ -310,7 +313,7 @@
           </section>
         </div>
 
-        <div id="shader" style="flex: 1">
+        <div id="shader" style="min-width: 50px;">
           <canvas id="glcanvas" style="width: 100%; height: 100%"></canvas>
           <script src="shader.js"></script>
         </div>
@@ -319,6 +322,7 @@
       <section
         id="footer"
         class="flex-container height-fit-content no-margin-top no-margin-bottom flex-justify-center"
+        
       >
         <span class="padding-1rem p-smaller outline"
           >Mattia Papaccioli 2025</span
