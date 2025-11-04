@@ -1,0 +1,20 @@
+{
+  "name": "sboogway.github.io",
+  "version": "1.0.0",
+  "description": "https://webmasters.stackexchange.com/questions/50808/how-to-forward-emails-to-my-custom-domain-to-my-gmail-account",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "homepage": "https://sboogway.github.io/",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^6.4.1"
+  }
+}

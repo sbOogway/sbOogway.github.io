@@ -1,4 +1,4 @@
-function toggleNavbar() {
+export function toggleNavbar() {
   const nav = document.querySelector("nav");
   nav.classList.toggle("show");
 }
@@ -11,7 +11,9 @@ window.addEventListener("scroll", () => {
   scrollFunction();
 });
 
-const scrollFunction = () => {
+
+
+export const scrollFunction = () => {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     // myButton.style.display = "block";
     myButton.classList.add("show");
@@ -22,7 +24,11 @@ const scrollFunction = () => {
 };
 
 // When the user clicks on the button, scroll to the top of the document
-const topScroll = () => {
+export const topScroll = () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
+
+window.toggleNavbar = toggleNavbar
+window.topScroll = topScroll
+window.scrollFunction = scrollFunction
