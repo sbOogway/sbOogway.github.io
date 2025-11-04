@@ -1,22 +1,22 @@
- /* ---------- 1. Get a WebGL2 context ---------- */
- const canvas = document.getElementById("glcanvas");
- const gl = canvas.getContext("webgl2");
- if (!gl) {
-   alert("WebGL2 not supported");
- }
+/* ---------- 1. Get a WebGL2 context ---------- */
+const canvas = document.getElementById("glcanvas");
+const gl = canvas.getContext("webgl2");
+if (!gl) {
+  alert("WebGL2 not supported");
+}
 
- /* ---------- 2. Resize handling ---------- */
- function resizeCanvas() {
-   const dpr = window.devicePixelRatio || 1;
-   canvas.width = Math.floor(canvas.clientWidth * dpr);
-   canvas.height = Math.floor(canvas.clientHeight * dpr);
-   gl.viewport(0, 0, canvas.width, canvas.height);
- }
- window.addEventListener("resize", resizeCanvas);
- resizeCanvas();
+/* ---------- 2. Resize handling ---------- */
+function resizeCanvas() {
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = Math.floor(canvas.clientWidth * dpr);
+  canvas.height = Math.floor(canvas.clientHeight * dpr);
+  gl.viewport(0, 0, canvas.width, canvas.height);
+}
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
 
- /* ---------- 3. Vertex shader (simple pass‑through) ---------- */
- const vertexSrc = `#version 300 es
+/* ---------- 3. Vertex shader (simple pass‑through) ---------- */
+const vertexSrc = `#version 300 es
 precision highp float;
 layout(location = 0) in vec2 aPosition;
 out vec2 vUV;
@@ -25,8 +25,8 @@ vUV = aPosition * 0.5 + 0.5;          // map [-1,1] → [0,1]
 gl_Position = vec4(aPosition, 0.0, 1.0);
 }`;
 
- /* ---------- 4. Fragment shader (your code) ---------- */
- const fragmentSrc = `#version 300 es
+/* ---------- 4. Fragment shader (your code) ---------- */
+const fragmentSrc = `#version 300 es
 precision highp float;
 out vec4 fragColor;
 in vec2 vUV;
@@ -67,62 +67,62 @@ col += drawSine(uv, BLUE,  4.0/3.0 * PI);
 fragColor = vec4(col, 1.0);
 }`;
 
- /* ---------- 5. Shader compilation helpers ---------- */
- function compileShader(src, type) {
-   const sh = gl.createShader(type);
-   gl.shaderSource(sh, src);
-   gl.compileShader(sh);
-   if (!gl.getShaderParameter(sh, gl.COMPILE_STATUS)) {
-     console.error("Shader compile error:", gl.getShaderInfoLog(sh));
-     gl.deleteShader(sh);
-     return null;
-   }
-   return sh;
- }
+/* ---------- 5. Shader compilation helpers ---------- */
+function compileShader(src, type) {
+  const sh = gl.createShader(type);
+  gl.shaderSource(sh, src);
+  gl.compileShader(sh);
+  if (!gl.getShaderParameter(sh, gl.COMPILE_STATUS)) {
+    console.error("Shader compile error:", gl.getShaderInfoLog(sh));
+    gl.deleteShader(sh);
+    return null;
+  }
+  return sh;
+}
 
- /* ---------- 6. Build program ---------- */
- const vert = compileShader(vertexSrc, gl.VERTEX_SHADER);
- const frag = compileShader(fragmentSrc, gl.FRAGMENT_SHADER);
- const program = gl.createProgram();
- gl.attachShader(program, vert);
- gl.attachShader(program, frag);
- gl.linkProgram(program);
- if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-   console.error("Program link error:", gl.getProgramInfoLog(program));
- }
+/* ---------- 6. Build program ---------- */
+const vert = compileShader(vertexSrc, gl.VERTEX_SHADER);
+const frag = compileShader(fragmentSrc, gl.FRAGMENT_SHADER);
+const program = gl.createProgram();
+gl.attachShader(program, vert);
+gl.attachShader(program, frag);
+gl.linkProgram(program);
+if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+  console.error("Program link error:", gl.getProgramInfoLog(program));
+}
 
- /* ---------- 7. Full‑screen quad geometry ---------- */
- const quadVerts = new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]);
- const vao = gl.createVertexArray();
- gl.bindVertexArray(vao);
+/* ---------- 7. Full‑screen quad geometry ---------- */
+const quadVerts = new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]);
+const vao = gl.createVertexArray();
+gl.bindVertexArray(vao);
 
- const vbo = gl.createBuffer();
- gl.bindBuffer(gl.ARRAY_BUFFER, vbo);
- gl.bufferData(gl.ARRAY_BUFFER, quadVerts, gl.STATIC_DRAW);
- gl.enableVertexAttribArray(0); // location = 0 in vertex shader
- gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
+const vbo = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, vbo);
+gl.bufferData(gl.ARRAY_BUFFER, quadVerts, gl.STATIC_DRAW);
+gl.enableVertexAttribArray(0); // location = 0 in vertex shader
+gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
 
- gl.bindVertexArray(null);
+gl.bindVertexArray(null);
 
- /* ---------- 8. Uniform locations ---------- */
- const uniResolution = gl.getUniformLocation(program, "iResolution");
- const uniTime = gl.getUniformLocation(program, "iTime");
+/* ---------- 8. Uniform locations ---------- */
+const uniResolution = gl.getUniformLocation(program, "iResolution");
+const uniTime = gl.getUniformLocation(program, "iTime");
 
- /* ---------- 9. Render loop ---------- */
- let start = performance.now();
- function render(now) {
-   const elapsed = (now - start) * 0.001; // seconds
-   gl.clearColor(0, 0, 0, 1);
-   gl.clear(gl.COLOR_BUFFER_BIT);
+/* ---------- 9. Render loop ---------- */
+let start = performance.now();
+function render(now) {
+  const elapsed = (now - start) * 0.001; // seconds
+  gl.clearColor(0, 0, 0, 1);
+  gl.clear(gl.COLOR_BUFFER_BIT);
 
-   gl.useProgram(program);
-   gl.uniform2f(uniResolution, canvas.width, canvas.height);
-   gl.uniform1f(uniTime, elapsed);
+  gl.useProgram(program);
+  gl.uniform2f(uniResolution, canvas.width, canvas.height);
+  gl.uniform1f(uniTime, elapsed);
 
-   gl.bindVertexArray(vao);
-   gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-   gl.bindVertexArray(null);
+  gl.bindVertexArray(vao);
+  gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+  gl.bindVertexArray(null);
 
-   requestAnimationFrame(render);
- }
- requestAnimationFrame(render);
+  requestAnimationFrame(render);
+}
+requestAnimationFrame(render);

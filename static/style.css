@@ -581,6 +581,10 @@
       flex-direction: column;
       /* padding-top: 1rem; */
     }
+
+    /* #main-content {
+      flex: 4;
+    } */
   
     section {
       margin-top: 6rem;
@@ -597,7 +601,7 @@
     }
   
     #image-carousel > img {
-      width: 100vw;
+      /* width: 100vw; */
     }
   
     .header {
@@ -611,7 +615,7 @@
     .portrait {
       /* grid-column: 1/1; */
       /* grid-row: 3/4; */
-      width: 75vw;
+      /* width: 75vw; */
     }
   }
   
