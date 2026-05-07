@@ -1,108 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Mattia Papaccioli - Software Engineer based in Como</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta
-      name="description"
-      content="Mattia Papaccioli, italian software developer based in Como. Also a musician and ultimate truth seeker."
-    />
 
-    <link rel="apple-touch-icon" href="/static/logo_fin.png" />
+<head>
+  <title>Mattia Papaccioli - Software Engineer based in Como</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description"
+    content="Mattia Papaccioli, italian software developer based in Como. Also a musician and ultimate truth seeker." />
 
-    <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="apple-touch-icon" href="/static/logo_fin.png" />
 
-    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
-    <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="/assets/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/veritablestudios/colored-icons@1.7.8/src/app/ci.min.css"
-    />
+  <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+  <link rel="manifest" href="manifest.json" />
 
-    <script
-      defer
-      src="https://umami.caduceus.lol/script.js"
-      data-website-id="7220034f-ad03-4e0f-b40f-a88fbe4b5908"
-    ></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/veritablestudios/colored-icons@1.7.8/src/app/ci.min.css" />
 
-    <script src="/assets/controls.js" type="module"></script>
-  </head>
+  <script defer src="https://umami.caduceus.lol/script.js"
+    data-website-id="7220034f-ad03-4e0f-b40f-a88fbe4b5908"></script>
 
-  <body class="indigo-bg">
+  <script src="/assets/controls.js" type="module"></script>
+</head>
+
+<body class="indigo-bg">
 
 
 
-    <div id="wrapper" class="max-width-1200px">
-      <header
-        id="header"
-        class="flex-container flex-center-vert padding-1rem flex-column"
-      >
-        <div class="flex-container" style="width: inherit">
-          <div class="medium-expand">
-            <img
-              src="/static/logo_fin.svg"
-              alt="Website logo"
-              style="height: 52px"
-            />
-          </div>
-          <div
-            class="medium-expand"
-            onclick="toggleNavbar()"
-            style="margin-left: auto; cursor: pointer"
-          >
-            <img src="/static/menu3.svg" alt="Navigation menu" />
-          </div>
+  <div id="wrapper" class="max-width-1200px">
+    <header id="header" class="flex-container flex-center-vert padding-1rem flex-column">
+      <div class="flex-container" style="width: inherit">
+        <div class="medium-expand">
+          <img src="/static/logo_fin.svg" alt="Website logo" style="height: 52px" />
         </div>
-        <nav>
-          <ul class="flex-container flex-space-between flex-column">
-            <!-- <li><a href="#home">🛖 home</a></li> -->
-            <!-- <li><a href="#software">🖥️ software</a></li> -->
-            <!-- <li><a href="#music">🎵 music</a></li> -->
-            <li><a href="t00lz">🛠️ t00lz</a></li>
-            <li><a href="t3mpl4tes">🗺️ t3mpl4tes</a></li>
-            <li><a href="notes">📝 notes</a></li>
-          </ul>
-        </nav>
-      </header>
+        <div class="medium-expand" onclick="toggleNavbar()" style="margin-left: auto; cursor: pointer">
+          <img src="/static/menu3.svg" alt="Navigation menu" />
+        </div>
+      </div>
+      <nav>
+        <ul class="flex-container flex-space-between flex-column">
+          <!-- <li><a href="#home">🛖 home</a></li> -->
+          <!-- <li><a href="#software">🖥️ software</a></li> -->
+          <!-- <li><a href="#music">🎵 music</a></li> -->
+          <li><a href="t00lz">🛠️ t00lz</a></li>
+          <li><a href="t3mpl4tes">🗺️ t3mpl4tes</a></li>
+          <li><a href="notes">📝 notes</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <!-- <div class="height-10vh"></div> -->
-      <button
-        class="pointer basic-style p-big load-transition"
-        id="home-btn"
-        onclick="topScroll()"
-      >
-        🛖
-      </button>
-        
-        
+    <!-- <div class="height-10vh"></div> -->
+    <button class="pointer basic-style p-big load-transition" id="home-btn" onclick="topScroll()">
+      🛖
+    </button>
 
-      <div style="display: flex; height:min-content;">
-        <div id="main-content"
-        style="margin-right: 1rem;">
-          <section id="home" class="flex-container height-fit-content"
-          style="margin-top: 3rem;">
-            <div class="home-children">
-              <h1 class="outline">Mattia Papaccioli</h1>
-              <h2 class="padding-top-1rem">
-                Let me handle the hard work,<br />
-                I make you grow faster
-              </h2>
-              <div class="padding-top-3rem flex-container flex-space-between">
-                <a
-                  data-umami-event="go youtube"
-                  target="_blank"
-                  href="https://youtube.com/@FlegiasBeats"
-                >
-                  <i class="ci expand ci-youtube ci-2x"></i>
-                </a>
-                <!-- <a
+
+
+    <div style="display: flex; height:min-content;">
+      <div id="main-content" style="margin-right: 1rem;">
+        <section id="home" class="flex-container height-fit-content" style="margin-top: 3rem;">
+          <div class="home-children">
+            <h1 class="outline">Mattia Papaccioli</h1>
+            <h2 class="padding-top-1rem">
+              Let me handle the hard work,<br />
+              I make you grow faster
+            </h2>
+            <div class="padding-top-3rem flex-container flex-space-between">
+              <a data-umami-event="go youtube" target="_blank" href="https://youtube.com/@FlegiasBeats">
+                <i class="ci expand ci-youtube ci-2x"></i>
+              </a>
+              <!-- <a
                   data-umami-event="go upwork"
                   target="_blank"
                   href="https://www.upwork.com/freelancers/~01066c1b10004aff84?viewMode=1"
@@ -113,7 +84,7 @@
                     src="/static/upwork.svg"
                   />
                 </a> -->
-                <!-- <a
+              <!-- <a
                   data-umami-event="go spotify"
                   target="_blank"
                   href="https://l.instagram.com/?u=https%3A%2F%2Fopen.spotify.com%2Fartist%2F1aHPAUM6GdPTfjEsctrS0u%3Fsi%3DOK3kdK_1RdGXbzh2giiHYw&e=AT0hro-Z6_-NAmRyiPm-9BlSAZtDQgU2TFBLJaNSfzybSim5EoqmxvGyiWEtoS407RlzjoC02goCapS6c814rO86ynwzW8fVGh8poseYd0HhkzV1"
@@ -121,190 +92,152 @@
                   <i class="ci expand ci-spotify ci-2x"></i>
                 </a> -->
 
-                <a
-                  data-umami-event="go telegram"
-                  target="_blank"
-                  href="https://t.me/uomo_succo"
-                >
-                  <i class="ci expand ci-telegram ci-2x"></i>
-                </a>
+              <a data-umami-event="go telegram" target="_blank" href="https://t.me/uomo_succo">
+                <i class="ci expand ci-telegram ci-2x"></i>
+              </a>
 
-                <a
-                  data-umami-event="go twitter"
-                  target="_blank"
-                  href="https://x.com/__papacc__"
-                >
-                  <i class="ci expand ci-twitter ci-2x"></i>
-                </a>
+              <a data-umami-event="go twitter" target="_blank" href="https://x.com/__papacc__">
+                <i class="ci expand ci-twitter ci-2x"></i>
+              </a>
 
-                <a
-                  data-umami-event="go github"
-                  target="_blank"
-                  href="https://github.com/sbOogway"
-                >
-                  <i class="ci expand ci-github ci-2x"></i>
-                </a>
-                <a
-                  data-umami-event="go instagram"
-                  target="_blank"
-                  href="https://instagram.com/__papacc__"
-                >
-                  <i class="ci expand ci-instagram ci-2x"></i>
-                </a>
-              </div>
+              <a data-umami-event="go github" target="_blank" href="https://github.com/sbOogway">
+                <i class="ci expand ci-github ci-2x"></i>
+              </a>
+              <a data-umami-event="go instagram" target="_blank" href="https://instagram.com/__papacc__">
+                <i class="ci expand ci-instagram ci-2x"></i>
+              </a>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section
-            id="hero"
-            class="flex-container"
-            style="justify-content: center"
-          >
-            <div style="position: relative; display: inline-block">
-              <svg style="position: absolute" height="100%" width="100%">
-                <!-- <circle cx="75" cy="75" r="50" fill="#adecbe"/> -->
-                <line
-                  x1="36%"
-                  y1="10%"
-                  x2="36%"
-                  y2="20%"
-                  stroke-width="3"
-                  stroke="indigo"
-                />
-                <line
-                  x1="38%"
-                  y1="18%"
-                  x2="36%"
-                  y2="20%"
-                  stroke-width="3"
-                  stroke="indigo"
-                />
-                <line
-                  x1="34%"
-                  y1="18%"
-                  x2="36%"
-                  y2="20%"
-                  stroke-width="3"
-                  stroke="indigo"
-                />
-              </svg>
-              <img
-                style="max-width: 965px"
-                alt="Mattia Papaccioli portrait"
-                class="portrait"
-                src="/static/rijnani.jpg"
-                alt=""
-              />
-            </div>
-          </section>
+        <section id="hero" class="flex-container" style="justify-content: center">
+          <div style="position: relative; display: inline-block">
+            <svg style="position: absolute" height="100%" width="100%">
+              <!-- <circle cx="75" cy="75" r="50" fill="#adecbe"/> -->
+              <line x1="36%" y1="10%" x2="36%" y2="20%" stroke-width="3" stroke="indigo" />
+              <line x1="38%" y1="18%" x2="36%" y2="20%" stroke-width="3" stroke="indigo" />
+              <line x1="34%" y1="18%" x2="36%" y2="20%" stroke-width="3" stroke="indigo" />
+            </svg>
+            <img style="max-width: 965px" alt="Mattia Papaccioli portrait" class="portrait" src="/static/rijnani.jpg"
+              alt="" />
+          </div>
+        </section>
 
-          <section id="education" class="flex-container height-fit-content">
-            <div class="home-children">
-              <h2
-                class="medium-big-text medium-heavy-text outline"
-                style="padding-right: 1rem"
-              >
-                Alma Mater
-              </h2>
-            </div>
-            <div class="home-children">
-              <p class="p-big">Bachelor's degree in Computer Science</p>
+        <section id="education" class="flex-container height-fit-content">
+          <div class="home-children">
+            <h2 class="medium-big-text medium-heavy-text outline" style="padding-right: 1rem">
+              Alma Mater
+            </h2>
+          </div>
+          <div class="home-children">
+            <p class="p-big">Bachelor's degree in Computer Science</p>
 
-              <p class="p-small">
-                <br />
-                - status: completed. 94/110
-                <br />
-                <br />
-                - at: Università degli studi dell'Insubria, Varese, Italy
-                <br />
-                <br />
-              </p>
-
-              <img
-                src="/static/unilogo.png"
-                
-                alt="uninsubria logo"
-                class="padding-top-1rem portrait"
-                style="width: 200px;"
-              />
-            </div>
-          </section>
-
-          <section id="rhcsa" class="flex-container height-fit-content">
-            
-          </section> 
-
-          <section id="software" class="flex-container height-fit-content">
-            <!-- instead of a flex make a grid to handle better zooming-->
-            <div class="home-children">
-              <h2 class="medium-big-text medium-heavy-text outline">
-                Software
-              </h2>
-            </div>
-            <div class="home-children">
-              <p class="p-big">
-                👨‍💻 I am a full stack software engineer with 5 year of
-                experience.
-              </p>
+            <p class="p-small">
               <br />
-              <p class="p-small">
-                🤖 I am specialized in python develoment and devops, mainly. I
-                have worked with telegram, youtube, twitter and discord api for
-                the creation of various automation services.
-              </p>
-              <div class="padding-top-1rem flex-container flex-space-between">
-                <i class="ci expand ci-ruby ci-2x"></i>
-                <i class="ci expand ci-html ci-2x"></i>
-                <i class="ci expand ci-js ci-2x"></i>
-                <i class="ci expand ci-mongodb ci-2x"></i>
-                <i class="ci expand ci-python ci-2x"></i>
-                <i class="ci expand ci-css ci-2x"></i>
-                <i class="ci expand ci-docker ci-2x"></i>
-              </div>
+              - status: completed. 94/110
+              <br />
+              <br />
+              - at: Università degli studi dell'Insubria, Varese, Italy
+              <br />
+              <br />
+            </p>
+
+            <img src="/static/unilogo.png" alt="uninsubria logo" class="padding-top-1rem portrait"
+              style="width: 200px;" />
+          </div>
+        </section>
+
+        <section id="rhcsa" class="flex-container height-fit-content">
+          <div class="home-children">
+            <h2 class="medium-big-text medium-heavy-text outline" style="padding-right: 1rem">
+              RHCSA
+            </h2>
+
+
+          </div>
+          <div class="home-children">
+            <p class="p-big">Red Hat Certified System Administrator</p>
+
+            <p class="p-small">
+              <br />
+              Red Hat Enterprise Linux 10
+              <br />
+              <br />
+              - skills: user/group mgmt, LVM, storage, SELinux, firewalling,
+              networking, automation with shell scripts
+              <br />
+              <br />
+            </p>
+            <div data-iframe-width="600" data-iframe-height="400"
+              style="margin-top: 50px; align-self: center;"
+              data-share-badge-id="c1a76d1c-783d-46ba-a8fe-475e8bc5f148" data-share-badge-host="https://www.credly.com">
             </div>
-          </section>
+            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+          </div>
 
-          <section id="hacking" class="flex-container height-fit-content"
-          style="margin-bottom: 3rem ;">
-            <div class="home-children">
-              <h2 class="medium-big-text medium-heavy-text outline">H4ck1ng</h2>
+        </section>
+
+        <section id="software" class="flex-container height-fit-content">
+          <!-- instead of a flex make a grid to handle better zooming-->
+          <div class="home-children">
+            <h2 class="medium-big-text medium-heavy-text outline">
+              Software
+            </h2>
+          </div>
+          <div class="home-children">
+            <p class="p-big">
+              👨‍💻 I am a full stack software engineer with 5 year of
+              experience.
+            </p>
+            <br />
+            <p class="p-small">
+              🤖 I am specialized in python develoment and devops, mainly. I
+              have worked with telegram, youtube, twitter and discord api for
+              the creation of various automation services.
+            </p>
+            <div class="padding-top-1rem flex-container flex-space-between">
+              <i class="ci expand ci-ruby ci-2x"></i>
+              <i class="ci expand ci-html ci-2x"></i>
+              <i class="ci expand ci-js ci-2x"></i>
+              <i class="ci expand ci-mongodb ci-2x"></i>
+              <i class="ci expand ci-python ci-2x"></i>
+              <i class="ci expand ci-css ci-2x"></i>
+              <i class="ci expand ci-docker ci-2x"></i>
             </div>
+          </div>
+        </section>
 
-            <div class="home-children">
-              <p class="p-big">
-                Took part in University of Insubria
-                <a href="https://cyberchallenge.it/">Cyberchallenge</a> course.
-              </p>
+        <section id="hacking" class="flex-container height-fit-content" style="margin-bottom: 3rem ;">
+          <div class="home-children">
+            <h2 class="medium-big-text medium-heavy-text outline">H4ck1ng</h2>
+          </div>
 
-              <p class="p-small">
-                Learned ethical hacking skills such as reverse engineering and
-                cryptography.
-              </p>
-              <img
-                style="max-width: 70vw"
-                src="/static/CCIT_Logo.svg"
-                alt="Cyberchallenge logo"
-                class="padding-top-1rem"
-              />
-            </div>
-          </section>
-        </div>
+          <div class="home-children">
+            <p class="p-big">
+              Took part in University of Insubria
+              <a href="https://cyberchallenge.it/">Cyberchallenge</a> course.
+            </p>
 
-        <div id="shader" style="min-width: 30px; max-width:250px;">
-          <canvas id="glcanvas" style="width: 100%; height: 100%"></canvas>
-          <script src="/assets/shader.js" type="module"></script>
-        </div>
+            <p class="p-small">
+              Learned ethical hacking skills such as reverse engineering and
+              cryptography.
+            </p>
+            <img style="max-width: 70vw" src="/static/CCIT_Logo.svg" alt="Cyberchallenge logo"
+              class="padding-top-1rem" />
+          </div>
+        </section>
       </div>
 
-      <section
-        id="footer"
-        class="flex-container height-fit-content no-margin-top no-margin-bottom flex-justify-center"
-        
-      >
-        <span class="padding-1rem p-smaller outline"
-          >Mattia Papaccioli 2025</span
-        >
-      </section>
+      <div id="shader" style="min-width: 30px; max-width:250px;">
+        <canvas id="glcanvas" style="width: 100%; height: 100%"></canvas>
+        <script src="/assets/shader.js" type="module"></script>
+      </div>
     </div>
-  </body>
+
+    <section id="footer" class="flex-container height-fit-content no-margin-top no-margin-bottom flex-justify-center">
+      <span class="padding-1rem p-smaller outline">Mattia Papaccioli 2025</span>
+    </section>
+  </div>
+</body>
+
 </html>
