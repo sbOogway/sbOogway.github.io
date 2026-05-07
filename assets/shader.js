@@ -34,11 +34,11 @@ in vec2 vUV;
 uniform vec2 iResolution;
 uniform float iTime;
 
-#define FREQUENCY 9.
-#define THICKNESS 0.1
-#define Y_SHIFT 0.5
-#define AMPLITUDE 0.45
-#define SPEED .5
+#define FREQUENCY 27.
+#define THICKNESS 0.5
+#define Y_SHIFT 0.9
+#define AMPLITUDE 0.9
+#define SPEED 1.
 
 #define PI 3.141592653589793
 #define BLACK vec3(0.,0.,0.)
@@ -47,24 +47,24 @@ uniform float iTime;
 #define BLUE  vec3(0.,0.,1.)
 
 float boundarySine(float x, float minimum, float maximum) {
-float half_ = minimum + maximum / 2.;
-return sin(x * 0.01) * half_ + half_ + minimum;
+  float half_ = minimum + maximum / 2.;
+  return sin(x * 0.01) * half_ + half_ + minimum;
 }
 
 vec3 drawSine(vec2 uv, vec3 color, float phase) {
-float sine = sin(uv.y * FREQUENCY + iTime * SPEED + phase) * AMPLITUDE + Y_SHIFT;
-bool isSineUpper = uv.x <= (sine + THICKNESS);
-bool isSineLower = uv.x >= (sine - THICKNESS);
-return (isSineUpper && isSineLower) ? color : BLACK;
+  float sine = sin(uv.y * FREQUENCY + iTime * SPEED + phase) * AMPLITUDE + Y_SHIFT;
+  bool isSineUpper = uv.x <= (sine + THICKNESS);
+  bool isSineLower = uv.x >= (sine - THICKNESS);
+  return (isSineUpper && isSineLower) ? color : BLACK;
 }
 
 void main() {
-vec2 uv = vUV;                     // already normalized [0,1]
-vec3 col = vec3(0.0);
-col += drawSine(uv, RED,   0.0);
-col += drawSine(uv, GREEN, 2.0/3.0 * PI);
-col += drawSine(uv, BLUE,  4.0/3.0 * PI);
-fragColor = vec4(col, 1.0);
+  vec2 uv = vUV;                     // already normalized [0,1]
+  vec3 col = vec3(0.0);
+  col += drawSine(uv, RED,   0.0);
+  col += drawSine(uv, GREEN, 2.0/3.0 * PI);
+  col += drawSine(uv, BLUE,  4.0/3.0 * PI);
+  fragColor = vec4(col, 1.0);
 }`;
 
 /* ---------- 5. Shader compilation helpers ---------- */

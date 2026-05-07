@@ -1,7 +1,7 @@
 :root {
-    --bg-color: black;
+    --bg-color: white;
     --highlight-color: #1f1f1f;
-    --txt-color: #adecbe; /* white; */
+    --txt-color: black; /* white; */
     --rainbow-gradient: linear-gradient(
       45deg,
       red,
@@ -38,7 +38,7 @@
   
     height: 100vh;
   
-    background-color: black;
+    background-color: white;
   }
   
   header {
