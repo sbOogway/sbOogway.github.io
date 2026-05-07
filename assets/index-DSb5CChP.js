@@ -13,11 +13,11 @@ in vec2 vUV;
 uniform vec2 iResolution;
 uniform float iTime;
 
-#define FREQUENCY 99999.
-#define THICKNESS 0.5
+#define FREQUENCY 9999.
+#define THICKNESS 0.6
 #define Y_SHIFT 0.0
-#define AMPLITUDE 0.5
-#define SPEED .5
+#define AMPLITUDE 0.6
+#define SPEED .9
 
 #define PI 3.141592653589793
 #define BLACK vec3(0.,0.,0.)
