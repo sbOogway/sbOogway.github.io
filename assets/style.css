@@ -439,11 +439,6 @@
     opacity: 0; /* Start hidden */
   }
   
-  .#adecbe-bg {
-    background-color: white;
-    /* background-color: #521341; */
-  }
-  
   .rainbow-bg {
     background-image: var(--rainbow-gradient);
     background-attachment: fixed;
