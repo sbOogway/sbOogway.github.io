@@ -9,7 +9,7 @@
       yellow,
       green,
       blue,
-      indigo,
+      #adecbe,
       violet
     );
   
@@ -439,8 +439,8 @@
     opacity: 0; /* Start hidden */
   }
   
-  .indigo-bg {
-    background-color: indigo;
+  .#adecbe-bg {
+    background-color: white;
     /* background-color: #521341; */
   }
   
@@ -724,7 +724,7 @@
     bottom: 0;
     left: 0;
     inset: 0 0 0 0;
-    background: indigo; /*hsl(200 100% 80%);*/
+    background: #adecbe; /*hsl(200 100% 80%);*/
     /* background: #521341; hsl(200 100% 80%); */
     z-index: -1;
     transition: transform 0.3s ease;
@@ -735,14 +735,14 @@
   }
   .outline:hover {
     text-shadow: 
-      -0px -0px 0 indigo, 
-       0px -0px 0 indigo,
-      -0px  0rem 0 indigo,
-       0.5rem  0.5rem 0 indigo;
+      -0px -0px 0 #adecbe, 
+       0px -0px 0 #adecbe,
+      -0px  0rem 0 #adecbe,
+       0.5rem  0.5rem 0 #adecbe;
   }
   
   a:hover, a:focus {
-    color: indigo;
+    color: #adecbe;
   }
   
   
@@ -755,7 +755,7 @@
   }
   
   .cta {
-    background-color: indigo;
+    background-color: #adecbe;
     color: #adecbe;
   
     font-size: xx-large;
