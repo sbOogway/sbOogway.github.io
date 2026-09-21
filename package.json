@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite --host",
     "build": "vite build",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist",
+    "prepare": "husky"
   },
   "homepage": "https://sboogway.github.io/",
   "keywords": [],
@@ -15,6 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^6.3.0",
+    "husky": "^9.1.7",
     "vite": "^6.4.1"
   }
 }
